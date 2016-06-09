@@ -4,18 +4,94 @@
     <meta charset="UTF-8">
     <title>Test</title>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <script src="./quiz.js"></script>
-    <script src="./quiz-tester.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"   integrity="sha256-6HSLgn6Ao3PKc5ci8rwZfb//5QUu3ge2/Sw9KfLuvr8="   crossorigin="anonymous"></script>
+    <script src="./wayne.js"></script>
+    <!-- <script src="./quiz-tester.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h3></h3>
-    <h3></h3>
-    <h1></h1>
-    <div>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+<!-- <div class = "outercontainer" >
+  <div class = "bigcontainer">
+    <div class = "container">
+        <div class = "face" id = "0">face</div>
+        <div class = "player">Player 1</div>
+        <div class = "player">Player 2</div> -->
+        <!-- <div class = "face" id = "3">face</div> -->
+    <!-- </div>
+
+    <div class = "container">
+    <div class = "question">question</div>
     </div>
+
+    <div class = "container">
+        <div class="rectangle"></div>
+    </div>
+    <div class = "container">
+        <div class="boxes"><button id = "0">choice</button></div>
+        <div class="boxes"><button id = "1">choice</button></div>
+    </div>
+    <div class = "container">
+        <div class="boxes"><button id = "2">choice</button></div>
+        <div class="boxes"><button id = "3">choice</button></div>
+    </div>
+  </div>
+</div> -->
+<!-- </div> -->
+
+<div class = "topcontainer">
+  <div class = "topleftcontainer">
+    <div class = "topleftleftcontainer">
+      <div class = "player1logo"><img src="./alien-logo.jpg" height= 70cm width= 70cm></div>
+    </div>
+    <div class = "topleftrightcontainer">
+      <div class = "player1"><p>Player 1</p></div>
+      <div class = "player1score player"></div>
+    </div>
+  </div>
+    <div class = "middlecontainer">
+      <div class = "timeleft">TIME LEFT</div>
+      <div class = "displaytimer">DISPLAY TIMER</div>
+    </div>
+    <div class = "toprightcontainer">
+      <div class = "toprightleftcontainer">
+        <div class = "player2"><p>Player 2</p></div>
+        <div class = "player2score player"></div>
+      </div>
+      <div class = "toprightrightcontainer">
+        <div class = "player2logo"><img src="./alien-logo2.png" height= 70cm width= 70cm> </div>
+      </div>
+    </div>
+</div>
+
+<div class = "bottomcontainer">
+  <div class = "bottomleftcontainer">
+    <div class = "question"></div>
+    <div class = "choicecontainer">
+      <div class = "select" id = "0"></div>
+      <div class = "select" id = "1"></div>
+    </div>
+    <div class = "choicecontainer">
+      <div class = "select" id = "2"></div>
+      <div class = "select" id = "3"></div>
+    </div>
+  </div>
+  <div class = "imagecontainer"></div>
+</div>
+
+
+
+
+
+
+
+</div>
+
 </body>
 </html>
+
+<script>
+document.write('<script src="http://'
+ + (location.host || 'localhost').split(':')[0]
+ + ':35729/livereload.js"></'
+ + 'script>')
+ </script>

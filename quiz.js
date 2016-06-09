@@ -2,14 +2,15 @@
 /* exports isGameOver, whoWon, playTurn, restart, currentQuestion, correctAnswer, numberOfAnswers */
 
 // A constructor function allows us to easily make question objects
-function Question (prompt, answers, correctAnswerIndex) {
+function Question (prompt, chicken, correctAnswerIndex) {
   this.prompt = prompt
-  this.choices = answers
+  this.choices = chicken
   this.correctChoice = correctAnswerIndex
 }
 
 // using the new keyword and the constructor we can create questions for the quiz
 var question1 = new Question('the question', ['answer a', 'answer b', 'answer c', 'answer d'], 0)
+var question2 = new Question('the question', ['answer a', 'answer b', 'answer c', 'answer d'], 0)
 
 // we can create an object to represent all of the settings and scores for the quiz
 var quiz = {
@@ -55,7 +56,7 @@ function playTurn (choice) {
     }
   }
   ++quiz.currentQuestion
-  if (quiz.currentQuestion === numberOfQuestions()) { 
+  if (quiz.currentQuestion === numberOfQuestions()) {
     quiz.isGameOver = true
   }
   return correct
